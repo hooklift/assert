@@ -6,6 +6,14 @@ go get -u github.com/hooklift/assert
 ### Usage
 
 ```go
+package blah
+
+import (
+	"testing"
+
+	"github.com/hooklift/assert"
+)
+
 func TestSave(t *testing.T) {
 	u := &Account{
 		repo:     &RepoMock{},
